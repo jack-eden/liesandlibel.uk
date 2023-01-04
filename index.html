@@ -5,7 +5,7 @@ layout: default
 <article class="post-list">
     <h1>Recent Posts:</h1>
     {% for post in site.posts limit:10 %}
-    <h2><a href="{{ post.permalink }}" title="{{ post.description }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ post.post_url}" title="{{ post.description }}">{{ post.title }}</a></h2>
     <p>
         {% if post.modified %}
             Published: {{ post.date | date: "%-d %B %Y %H:%M" }}, last updated {{ post.modified | date: "%-d %B %Y %H:%M" }} 
