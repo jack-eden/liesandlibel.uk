@@ -16,7 +16,7 @@ title: "Site Index"
     {% for post in site.posts %}
     <ul>
         <li>
-            <a href="{% post_url {{ post.filename }} %}" title="{{ post.description }}">{{ post.title }}</a>
+            <a href="{{ post.permalink }}" title="{{ post.description }}">{{ post.title }}</a>
             <p>
                 {% if post.modified %}
                     Published: {{ post.date | date: "%-d %B %Y %H:%M" }}, last updated {{ post.modified | date: "%-d %B %Y %H:%M" }} 
