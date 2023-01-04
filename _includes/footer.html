@@ -1,0 +1,15 @@
+<nav class="site-footer__navigation">
+    Site links:
+    <ul>
+        {%- for link in site.data.navigation.main -%}
+        <li>
+            <a href="{{ link.url | relative_url }}" title="{{ link.description }}">{{ link.title }}</a>
+        </li>
+        {%- endfor -%}
+        <li>
+            <a href="/about/" title="Contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<p>This site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>

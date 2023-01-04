@@ -1,0 +1,14 @@
+title: LIES&LIBEL
+email: jack@liesandlibel.uk
+description: >- # this means to ignore newlines until "baseurl:"
+  Work in progress.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+url: https://liesandlibel.uk/
+logo: 
+
+plugins:
+  - jekyll-include-cache

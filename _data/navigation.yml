@@ -1,0 +1,10 @@
+main:
+  - title: "Home"
+    url: /index/
+    description: "Home"
+  - title: "About"
+    url: /about/
+    description: "About"
+  - title: "Posts"
+    url: /all-posts/
+    description: "Index of all blog posts"

@@ -1,0 +1,32 @@
+---
+layout: page
+permalink: /all-posts/
+title: "Site Index"
+---
+
+<article class="post-list--index">
+    <h2>Pages:</h2>
+    <ul>
+    {%- for link in site.data.navigation.main -%}
+        <li><a href="{{ link.url | relative_url }}" title="{{ link.description }}">{{ link.title }}</a></li>
+    {%- endfor -%}
+    </ul>
+
+    <h2>Posts:</h2>
+    {% for post in site.posts %}
+    <ul>
+        <li>
+            <a href="{{ post.permalink }}" title="{{ post.description }}">{{ post.title }}</a>
+            <p>
+                {% if post.modified %}
+                    Published: {{ post.date | date: "%-d %B %Y %H:%M" }}, last updated {{ post.modified | date: "%-d %B %Y %H:%M" }} 
+                {% else %}
+                    Published: {{ post.date | date: "%-d %B %Y" }}
+                {% endif %}
+                <br />
+                {{ post.description }}
+            </p>
+        </li>
+    </ul>
+    {% endfor %}
+</article>

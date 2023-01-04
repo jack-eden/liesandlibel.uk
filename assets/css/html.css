@@ -1,0 +1,176 @@
+/* # Global styles */
+/* ## Typography */
+/* ### Font faces */
+@font-face {
+    font-family: "Overpass";
+    src: url(../fonts/Overpass-VariableFont_wght.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: "Overpass";
+    src: url(../fonts/Overpass-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Overpass Mono";
+    src: url(../fonts/OverpassMono-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+html {
+    font-family: Overpass, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+tr, th, td,
+pre, code, kbd, samp {
+    font-family: "Overpass Mono", 'Courier New', Courier, monospace;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* ### Sizing, spacing, and leading */
+html {
+    font-size: 1.25em;
+    color: #000202;
+}
+
+p,
+tr, th, td,
+kbd, code, samp, pre {
+    line-height: 1.75;
+}
+/* ## Layout */
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header main main main main"
+        "footer footer footer footer footer";
+    align-items: start;
+}
+
+.site-header {
+    grid-area: header;
+    padding-left: 0.8rem;
+}
+
+.site-footer {
+    grid-area: footer;
+    padding-left: 0.8rem;
+    align-self: self-end;
+}
+
+.site-main {
+    grid-area: main;
+    max-width: 70ch;
+    padding-left: 5rem;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* # Components */
+/* ## Header */
+.site-header {
+    background-color: #000202;
+    color: white;
+    font-weight: 600;
+}
+
+.site-header__logo {
+    font-weight: 900;
+}
+.site-header__logo a:link,
+.site-header__logo a:visited,
+.site-header__logo a:hover,
+.site-header__logo a:active,
+.site-header__logo a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.site-header__navigation ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.site-header__navigation li {
+    display: inline;
+}
+
+.site-header__navigation a:active {
+    color: white;
+}
+
+/* ## Main */
+/* ### Artiles */
+.site-main__article h1 {
+    margin-bottom: 0;
+}
+.site-main__article--date {
+    margin-top: 0;
+}
+
+/* ### Lists */
+.post-list h2 {
+    margin-bottom: 0;
+} 
+.post-list p {
+    margin-top: 0;
+}
+
+.post-list--index p {
+    margin-top: 0;
+}
+.post-list--index a {
+    font-weight: 600;
+}
+
+/* ## Footer */
+.site-footer {
+    border-top: 36px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: gray;
+    background-color: #000202;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.site-footer__navigation {
+    margin-top: 36px;
+    margin-bottom: 1rem;
+}
+
+.site-footer__navigation ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: inline;
+}
+
+.site-footer__navigation li {
+    display: inline;
+}
+
+.site-footer a:link,
+.site-footer a:visited,
+.site-footer a:hover,
+.site-footer a:active,
+.site-footer a:focus {
+    color: white;
+}
