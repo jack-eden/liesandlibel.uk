@@ -84,12 +84,6 @@ body {
 
 /* # Components */
 /* ## Header */
-.site-header {
-    background-color: #000202;
-    color: white;
-    font-weight: 600;
-}
-
 .site-header__logo {
     font-weight: 900;
 }
@@ -98,7 +92,7 @@ body {
 .site-header__logo a:hover,
 .site-header__logo a:active,
 .site-header__logo a:focus {
-    color: white;
+    color: #000202;
     text-decoration: none;
 }
 
