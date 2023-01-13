@@ -12,3 +12,6 @@ logo:
 
 plugins:
   - jekyll-include-cache
+
+sass:
+  sass_dir: assets/css
